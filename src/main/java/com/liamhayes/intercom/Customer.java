@@ -1,6 +1,5 @@
 package com.liamhayes.intercom;
 
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /*
@@ -10,56 +9,56 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Customer implements Comparable<Customer> {
 
 	@JsonProperty("user_id")
-    private int id;
-    private String name;
-    private String longitude;
-    private String latitude;
+	private int id;
+	private String name;
+	private String longitude;
+	private String latitude;
 
-    public Customer() {
-    }
-    
-    public Customer(int id, String name, String longitude, String latitude) {
-        this.id = id;
-        this.name = name;
-        this.longitude = longitude;
-        this.latitude = latitude;
-    }
+	public Customer() {
+	}
 
-    public int getId() {
-        return id;
-    }
+	public Customer(int id, String name, String longitude, String latitude) {
+		this.id = id;
+		this.name = name;
+		this.longitude = longitude;
+		this.latitude = latitude;
+	}
 
-    public void setId(int id) {
-        this.id = id;
-    }
+	public int getId() {
+		return id;
+	}
 
-    public String getName() {
-        return name;
-    }
+	public void setId(int id) {
+		this.id = id;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public String getLongitude() {
-        return longitude;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    public void setLongitude(String longitude) {
-        this.longitude = longitude;
-    }
+	public String getLongitude() {
+		return longitude;
+	}
 
-    public String getLatitude() {
-        return latitude;
-    }
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
+	}
 
-    public void setLatitude(String latitude) {
-        this.latitude = latitude;
-    }
+	public String getLatitude() {
+		return latitude;
+	}
 
-    public String toString() {
-        return "id=" + id + ", name=" + name + ", latitude=" + latitude + ", longitude=" + longitude;
-    }
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+
+	public String toString() {
+		return "id=" + id + ", name=" + name + ", latitude=" + latitude + ", longitude=" + longitude;
+	}
 
 	@Override
 	public int compareTo(Customer otherCustomer) {

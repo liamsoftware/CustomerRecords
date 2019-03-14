@@ -1,6 +1,10 @@
 # CustomerRecords
 Liam Hayes Intercom take home test submitted March 14th, 2019
 
+The program reads a list of customers in JSON format from a text file.
+Then calculates the customers distance from the Intercom Dublin office.
+Finally, it prints the list of customers within 100km of the office in ascending order based on the user id.
+
 ## Instructions:
 Run the program with Maven:
 1. mvn clean install
